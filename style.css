@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td{
+	vertical-align: top;
+}
+
+p{
+	margin-bottom: 5px;
+}
+
+/* = = = = = = = = = Custom = = = = = = = = = */
+
+body{
+  background: #B0C4DE;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+#prehome{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -208px;
+  margin-left: -209px;
+}
+
+#content{
+  width: 900px;
+  position: relative;
+  left: 50%;
+  min-height:600px;
+  margin-left: -450px;
+  background: transparent url(Images/fond.png) repeat-y;
+}
+
+#banniere{
+  position: relative;
+  text-align: center;
+  margin-bottom: 15px;
+  height: 143px;
+  padding-top: 10px;
+}
+
+#titre{
+  position: relative;
+  left: 50%;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  width: 870px;
+  border-bottom: 1px solid #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-left: -435px;
+  font-size: 24px;
+  font-weight: bold;
+  background: #EEE;
+
+}
+
+#footer{
+  position: relative;
+  left: 50%;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  width: 870px;
+  border-bottom: 1px solid #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: -435px;
+  font-size: 14px;
+  color: #CCC;
+  background: #EEE;
+}
+
+
+#menu-left{
+  float: left;
+  margin-left: 10px;
+  position: absolute;
+}
+
+#contenu{
+	text-align: center;
+	position: relative;
+	width: 700px;
+	left: 171px;
+	line-height: 1.2em;
+}
+
+#contenu100{
+	text-align: center;
+	position: relative;
+	width: 800px;
+	margin:auto;
+	line-height: 1.2em;
+}
+
+#contenu span{
+	font-size: 18px;
+	color: #0000BA;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+ol {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+  color: #333;
+  font-size: 20px;
+}
+
+ol p {
+  font-size: 22px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+ol ol {
+	list-style-type: upper-alpha;
+    margin-bottom: 20px;
+}
+
+ol ol p {
+  font-size: 18px;
+  color: black;
+}
+
+ol ol ol {
+    font-size: 16px;
+	list-style-type: decimal;
+	margin-bottom: 20px;
+}
+
+ol ol ol li{
+	padding-bottom: 5px;
+}
+
+
+a, a:visited{
+	text-decoration: none;
+	color: #0000BA;
+	cursor: pointer;
+}
+
+a:hover{
+	border-bottom: 1px solid grey;
+	color: grey;
+}
+
+#menu-left a:hover, #menu-haut a:hover{
+	border: none;
+}
