@@ -1,7 +1,0 @@
-prod:
-    host: riven.tchap.me
-    user: tchap
-    forward_agent: ~
-    stage: production
-    deploy_path: "/home/tchap/www/lechiffre"
-    branch: master
