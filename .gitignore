@@ -1,4 +1,3 @@
 .DS_Store
 
-deploy/*
-!deploy/nginx.conf
+deploy/vars.yml

@@ -1,0 +1,3 @@
+lechiffre_hosts: frontend_node
+project_path: /var/www/lechiffre.info
+git_repo: git@github.com:tchapi/lechiffre.info.git

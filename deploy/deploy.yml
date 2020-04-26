@@ -1,0 +1,36 @@
+---
+- hosts: "{{ lechiffre_hosts }}"
+  vars_files:
+    - ./vars.yml
+  tasks:
+    - name: Set some variables
+      set_fact:
+        release_path: "{{ project_path }}/releases/{{ lookup('pipe','date +%Y%m%d%H%M%S') }}"
+        current_path: "{{ project_path }}/current"
+        shared_path: "{{ project_path }}/shared"
+    - name: Retrieve current release folder
+      command: readlink -f current
+      register: current_release_path
+      ignore_errors: yes
+      args:
+        chdir: "{{ project_path }}"
+    - name: Create new folder
+      file:
+        dest={{ release_path }}
+        mode=0755
+        recurse=yes
+        state=directory
+    - name: Clone the repository
+      git:
+        repo: "{{ git_repo }}"
+        dest: "{{ release_path }}"
+    - name: Update symlink
+      file:
+        src={{ release_path }}
+        dest={{ current_path }}
+        state=link
+    - name: Delete old dir
+      shell: rm -rf {{ current_release_path.stdout }}/
+      when: current_release_path.stdout != current_path
+      args:
+        warn: false
